@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #2F5249;
+}
+
+ .encabezado {
+    display: block;
+    background-color: #E3DE61;
+    font-size: medium;
+    color: #437057;
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.imagenes figure {
+    margin: 0;
+    padding: 0px;
+    width: 300px;
+}
+
+.imagenes figcaption {
+    background-color: #97B067;
+    color: #E3DE61;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+
+}
+.imagenes img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+@media (min-width:700px) {
+    .imagenes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .imagenes figure {
+        max-width: 300px;
+    }
+}
